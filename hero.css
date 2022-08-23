@@ -1,5 +1,5 @@
 body{
- background-image:  url(./Assets/railroadPark.jpg);
+ background-image:  url(./Assets/railroadpark.jpg);
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
@@ -8,7 +8,7 @@ body{
 }
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/railroadPark.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/railroadpark.jpg);
 
   /* Set a specific height */
   height: 100vh;
@@ -35,6 +35,13 @@ body{
   color: #e89e30;
   font-family: 'Mochiy Pop One', sans-serif;
   margin: 1rem;
+  font-size: 4rem;
+}
+
+.hero-main2{
+  color: #e89e30;
+  font-family: 'Mochiy Pop One', sans-serif;
+  margin-top: 6rem;
   font-size: 4rem;
 }
 
