@@ -1,0 +1,84 @@
+body{
+ background-image:  url(./Assets/railroadPark.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-color: white;
+
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/railroadPark.jpg);
+
+  /* Set a specific height */
+  height: 100vh;
+  min-height: 500px;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-main{
+  color: #e89e30;
+  font-family: 'Mochiy Pop One', sans-serif;
+  margin: 1rem;
+  font-size: 4rem;
+}
+
+.myBTN {
+  width: 140px;
+  height: 45px;
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.myBTN:hover {
+  background-color: #e89e30;
+  box-shadow: 0px 15px 20px #e08e12;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/*Floating Image*/
+.iphone {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+ margin: 0 auto;
+  width: 100%;
+ border-radius: 100%;
+  margin-bottom: -10%;
+  
+  z-index: -1;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
