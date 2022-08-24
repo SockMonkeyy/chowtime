@@ -1,3 +1,6 @@
+html{
+  background-color: black;
+}
 body {
   background-image: url(./Assets/railroadpark.jpg);
   background-position: center;
@@ -130,5 +133,5 @@ body {
 
 .float{
   cursor: pointer;
-
 }
+

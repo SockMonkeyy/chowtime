@@ -11784,6 +11784,7 @@ fieldset:disabled .btn {
     background-color: #000000;
     z-index: 1;
     height: 800px;
+    border: none;
 }
 
 .chow{
