@@ -43,7 +43,7 @@
     background: #fff;
     width: 85%;
     margin: 0 auto;
-    top: 20%;
+    top: 25%;
     padding: 10px;
     border-radius: 3px;
     -webkit-box-shadow: 0 8px 16px -8px #adadad;
@@ -65,10 +65,11 @@
   }
   
   .viewOpen1 {
+ 
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
-    display: inline-block;
+    display: block;
     border: 2px solid rgba(70, 70, 70, 0.7);
     max-width: 170px;
     background: #fff;
