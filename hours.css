@@ -183,15 +183,15 @@
   }
   
   @media all and (max-width: 470px) {
-    .modal {
+    .modal1 {
       width: 75%;
     }
-    .modal h2{
+    .modal1 h2{
       font-size: 20px;
     }
   }
   
-  #modal-state:checked + .modal-overlay .modal {
+  #modal-state:checked + .modal-overlay .modal1 {
     top: 20%;
   }
   
@@ -203,7 +203,7 @@
     top: 0;
   }
   
-  .button-close {
+  .button-close1 {
     text-decoration: none;
     position: absolute;
     color: #fff;
