@@ -61,8 +61,8 @@
 }
 
 .closed1 {
-    color: #e89e30;
-    border: 2px solid #e89e30;
+    color: red;
+    border: 2px solid red;
 }
 
 .viewOpen1 {
@@ -79,7 +79,7 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
-    margin-top: -2%;
+    margin-top: -15%;
     cursor: pointer;
     font-family: 'Mochiy Pop One', sans-serif;
     animation-name: floating;
