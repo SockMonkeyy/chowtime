@@ -2,20 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-  }
-  
-  #main1 {
+}
+
+#main1 {
     background: url(./Assets/railroadpark.jpg);
     background-size: cover;
     background-position: center;
     height: 60vh;
     width: 100%;
     text-align: center;
-   display: block;
-   font-family: 'Mochiy Pop One', sans-serif;
-  }
-  
-  #logo {
+    display: block;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+#logo {
     top: 12%;
     position: relative;
     left: 0;
@@ -23,20 +23,20 @@
     margin: 0 auto;
     padding: 10px;
     max-width: 350px;
-  }
-  
-  #logo img {
+}
+
+#logo img {
     width: 100%;
-  }
-  
-  #darkBack {
+}
+
+#darkBack {
     position: absolute;
     background: rgba(31, 31, 31, 0.589);
     width: 100vw;
     height: 100%;
-  }
-  
-  #timeDiv {
+}
+
+#timeDiv {
     font-size: 15px;
     text-transform: uppercase;
     position: relative;
@@ -53,19 +53,19 @@
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
-  }
-  
-  .open1 {
+}
+
+.open1 {
     color: #27ae60;
     border: 2px solid #27ae60;
-  }
-  
-  .closed1 {
+}
+
+.closed1 {
     color: #27ae60;
     border: 2px solid #27ae60;
-  }
-  
-  .viewOpen1 {
+}
+
+.viewOpen1 {
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
@@ -75,71 +75,80 @@
     background: #fff;
     width: 100%;
     color: #e89e30;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    margin: 0 auto;  
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    margin: 0 auto;
     padding: 10px;
     border-radius: 3px;
-  
+    margin-top: -2%;
     cursor: pointer;
-  font-family: 'Mochiy Pop One', sans-serif;
-  
+    font-family: 'Mochiy Pop One', sans-serif;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
-  }
-  
-  .viewOpen1 i {
+
+
+}
+
+.viewOpen1 i {
     color: rgba(70, 70, 70, 0.8);
-  }
-  
-  @media all and (max-width: 600px) {
+}
+
+@media all and (max-width: 600px) {
     #timeDiv {
-      margin-bottom: 20px;
+        margin-bottom: 20px;
     }
-  }
-  
-  @media all and (min-width: 601px) {
+}
+
+@media all and (min-width: 601px) {
     #timeDiv {
-      margin-right: 15px;
+        margin-right: 15px;
     }
-  }
-  
-  .dateTime {
+}
+
+.dateTime {
     max-width: 320px;
     margin: 0 auto;
-  }
-  
-  .day {
+}
+
+.day {
     display: inline-block;
     float: left;
-  }
-  
-  .time {
+}
+
+.time {
     display: inline-block;
     float: right
-  }
-  
-  .today {
+}
+
+.today {
     color: rgb(200, 85, 39);
     font-weight: 600;
-  }
-  
-  @media all and (max-height: 420px) {
-    #timeDiv, .viewOpen1 {
-      top: 60%;
-      margin-top: -10%;
+}
+
+@media all and (max-height: 420px) {
+
+    #timeDiv,
+    .viewOpen1 {
+        top: 60%;
+
     }
-  }
-  /* view hours modal */
-  
-  @keyframes fade-in {
+}
+
+/* view hours modal */
+
+@keyframes fade-in {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  .modal-overlay {
+}
+
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -147,19 +156,19 @@
     bottom: 0;
     background-color: rgba(173, 173, 173, 0.5);
     display: none;
-  }
-  
-  #modal-state {
+}
+
+#modal-state {
     display: none;
-  }
-  
-  #modal-state:checked + .modal-overlay {
+}
+
+#modal-state:checked+.modal-overlay {
     opacity: 1;
     animation: fade-in .4s;
     display: block;
-  }
-  
-  .modal1 {
+}
+
+.modal1 {
     position: absolute;
     margin: 0 auto;
     padding: 30px 25px;
@@ -171,12 +180,12 @@
     max-width: 400px;
     line-height: 1.8;
     margin-top: 50%;
-    
-  }
-  
-  
-  
-  .modal1 h2 {
+
+}
+
+
+
+.modal1 h2 {
     margin-top: 0;
     line-height: 25px;
     font-size: 22px;
@@ -186,31 +195,32 @@
     font-weight: 400;
     font-family: 'Mochiy Pop One', sans-serif;
     color: #e89e30;
-  }
-  
-  @media all and (max-width: 470px) {
+}
+
+@media all and (max-width: 470px) {
     .modal1 {
-      width: 75%;
-      
+        width: 75%;
+
     }
-    .modal1 h2{
-      font-size: 20px;
+
+    .modal1 h2 {
+        font-size: 20px;
     }
-  }
-  
-  #modal-state:checked + .modal-overlay .modal {
+}
+
+#modal-state:checked+.modal-overlay .modal {
     top: 20%;
-  }
-  
-  .modal-overlay-close {
+}
+
+.modal-overlay-close {
     height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
-  }
-  
-  .button-close1 {
+}
+
+.button-close1 {
     text-decoration: none;
     position: absolute;
     color: #fff;
@@ -220,4 +230,4 @@
     top: 0px;
     right: 0;
     cursor: pointer
-  }
+}
