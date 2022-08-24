@@ -17,7 +17,7 @@
   
   #logo {
     top: 10%;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -30,7 +30,7 @@
   }
   
   #darkBack {
-    position: absolute;
+    position: relative;
     background: rgba(31, 31, 31, 0.589);
     width: 100vw;
     height: 100%;
@@ -69,15 +69,12 @@
     font-size: 15px;
     text-transform: uppercase;
     position: relative;
-    display: inline-block;
-    vertical-align: top;
     border: 2px solid rgba(70, 70, 70, 0.7);
     max-width: 170px;
     background: #fff;
     width: 100%;
     color: rgba(70, 70, 70, 0.8);
     margin: 0 auto;
-   margin-top: 45%;
     padding: 10px;
     border-radius: 3px;
     -webkit-box-shadow: 0 8px 16px -8px #adadad;
@@ -123,8 +120,9 @@
   }
   
   @media all and (max-height: 420px) {
-    #timeDiv, .viewOpen {
+    #timeDiv, .viewOpen1 {
       top: 50%;
+      margin: 0 auto;
     }
   }
   /* view hours modal */
@@ -159,7 +157,7 @@
   }
   
   .modal1 {
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     padding: 30px 25px;
     background: #fff;
