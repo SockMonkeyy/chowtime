@@ -1,11 +1,12 @@
-body{
- background-image:  url(./Assets/railroadpark.jpg);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- background-color: white;
+body {
+  background-image: url(./Assets/railroadpark.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
 
 }
+
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/railroadpark.jpg);
@@ -29,20 +30,27 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  background-color: rgba(0, 0, 0, 0.384);
+  border-radius: 5px;
+  padding: 2rem;
+
 }
 
-.hero-main{
+.hero-main {
   color: #e89e30;
   font-family: 'Mochiy Pop One', sans-serif;
-  margin: 1rem;
+  margin: 0 auto;
   font-size: 4rem;
+  position: relative;
+
 }
 
-.hero-main2{
+.hero-main2 {
   color: #e89e30;
   font-family: 'Mochiy Pop One', sans-serif;
-  margin-top: 6rem;
+  position: relative;
   font-size: 4rem;
+  
 }
 
 .myBTN {
@@ -61,7 +69,7 @@ body{
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  }
+}
 
 .myBTN:hover {
   background-color: #e89e30;
@@ -71,21 +79,56 @@ body{
 }
 
 /*Floating Image*/
-.iphone {  
+.iphone {
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
- margin: 0 auto;
+  margin: 0 auto;
   width: 100%;
- border-radius: 100%;
+  border-radius: 100%;
   margin-bottom: -10%;
-  
-  z-index: -1;
+  background-color: #e89e30;
+  cursor: pointer;
+  position: relative;
+
 }
 
 @keyframes floating {
-  from { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
-  to   { transform: translate(0, -0px); }    
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+
+
+.overlay{
+  background-color: #000;
+}
+
+.order{
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 5px;
+}
+
+.order:hover{
+  color: #e89e30;
+}
+
+.float{
+  cursor: pointer;
+
 }
