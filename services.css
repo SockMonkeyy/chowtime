@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 40px;
+    padding: 1rem;
     width: 100%;
   }
   
@@ -17,7 +17,7 @@
     position: relative;
     -webkit-backface-visibility: hidden;
     width: 410px;
-    margin-bottom: 35px;
+    margin-bottom: 1rem;
     max-width: 100%;
   }
   
@@ -87,12 +87,11 @@
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 60px;
+    padding: .5rem;
     outline: 1px solid transparent;
     -webkit-perspective: inherit;
     perspective: inherit;
     z-index: 2;
-    
     transform: translateY(-50%) translateZ(60px) scale(.94);
     -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
     -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
@@ -113,7 +112,7 @@
   }
   
   .flip-box-img {
-    margin-top: 25px;
+    margin-top: 1rem;
   }
   
   .flip-box-button {
@@ -138,7 +137,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.555); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.65); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
   }
