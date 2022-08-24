@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
-html{
+html {
   background-color: black;
 }
+
 body {
   background-image: url(./Assets/railroadpark.jpg);
   background-position: center;
@@ -54,7 +56,7 @@ body {
   font-family: 'Mochiy Pop One', sans-serif;
   position: relative;
   font-size: 4rem;
-  
+
 }
 
 .myBTN {
@@ -114,11 +116,11 @@ body {
 
 
 
-.overlay{
+.overlay {
   background-color: #000;
 }
 
-.order{
+.order {
   color: white;
   text-decoration: none;
   z-index: 2;
@@ -127,19 +129,21 @@ body {
   background-color: rgba(0, 0, 0, 0.466);
   border-radius: 5px;
   padding: 0.5rem;
-/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff; */
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+
   text-align: center;
   animation: blink 12s infinite;
   -webkit-animation: blink 12s infinite;
-  font-family: "Sacramento";
-  
+  font-family: 'Mochiy Pop One', sans-serif;
+
 }
+
 /* blink animation */
 @-webkit-keyframes blink {
+
   20%,
   24%,
   55% {
@@ -155,15 +159,16 @@ body {
   54%,
   56%,
   100% {
-/*     color: #fccaff;
+    /*     color: #fccaff;
     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
 
 @keyframes blink {
+
   20%,
   24%,
   55% {
@@ -179,23 +184,21 @@ body {
   54%,
   56%,
   100% {
-/*     color: #fccaff;
+    /*     color: #fccaff;
     text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
       0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
 
 
-.order:hover{
-color: white;
+.order:hover {
+  color: white;
   box-shadow: 0px 15px 20px #e08e12;
   transform: translateY(-7px);
 }
 
-.float{
+.float {
   cursor: pointer;
 }
-
-
