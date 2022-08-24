@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-image: url(./Assets/hero1.jpg);
+  background-image: url(./Assets/railroadpark.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/hero1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(./Assets/railroadpark.jpg);
 
   /* Set a specific height */
   height: 100vh;
@@ -196,7 +196,7 @@ body {
 .order:hover {
   color: white;
   box-shadow: 0px 15px 20px #e08e12;
-  transform: translateY(-4px);
+  transform: translateY(-7px);
 }
 
 .float {
@@ -247,6 +247,7 @@ body {
 	font-size: 1.2em;
 	transform-origin: 0 100px;
 }
+
 .welcome{
   font-family: 'Mochiy Pop One', sans-serif;
 }
