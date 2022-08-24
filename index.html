@@ -31,6 +31,7 @@
             <link rel="stylesheet" href="services.css">
             <link rel="stylesheet" href="hours.css">
             <link rel="stylesheet" href="order-online.css">
+            <link rel="stylesheet" href="contactUs.css">
             
             <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
             <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
@@ -56,7 +57,7 @@
                                 data-glf-ruid="40a8854a-c8e1-4055-a049-efc0997aa5e1">Menu</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="#contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -258,6 +259,170 @@
                     </div>
                   </div>
 
+
+
+
+<div class="container-fluid contactForm" id="contact">
+                  <form class="col contact" style="background-image: url(./Assets/hero2.jpg);" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdojkzaq" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        <div class="contact1">
+                      <label class="" for="full-name">Full Name</label>
+                      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                      <label for="email-address">Email Address</label>
+                      <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+                      <label for="message">Message</label>
+                      <textarea rows="5" name="message" id="message" placeholder="We'd Love to Hear From You!" required=""></textarea>
+                      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    </fieldset>
+                    <input class="myBTN submit" type="submit" value="Submit">
+                  </form>
+                </div>
+                </div>
+               
+                  <style>/* reset */
+
+.contact{
+    padding: 2rem;
+    background-image: url(./Assets/hero2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #e89e30;
+   
+ 
+}
+.contact1{
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.514);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #e89e30;
+    
+}
+
+
+.submit{
+  border: 1px solid #e89e30;
+}
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm fieldset,
+                  #fs-frm optgroup,
+                  #fs-frm label,
+                  #fs-frm #card-element:disabled {
+                    font-family: inherit;
+                    font-size: 100%;
+                    color: inherit;
+                    border: none;
+                    border-radius: 5px;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0 auto;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    text-align: center;
+                    max-width: 600px;
+                    
+                  }
+                  #fs-frm label,
+                  #fs-frm legend,
+                  #fs-frm ::placeholder {
+                    font-size: .825rem;
+                    margin-bottom: .5rem;
+                    padding-top: .2rem;
+                    display: flex;
+                    align-items: baseline;
+                    text-align: center;
+                  }
+                  
+                  /* border, padding, margin, width */
+                  #fs-frm input,
+                  #fs-frm select,
+                  #fs-frm textarea,
+                  #fs-frm #card-element {
+                    border: 1px solid rgba(0,0,0,0.2);
+                    background-color: rgba(255,255,255,0.9);
+                    padding: .75em 1rem;
+                    margin-bottom: 1.5rem;
+                    text-align: center;
+                  }
+                  #fs-frm input:focus,
+                  #fs-frm select:focus,
+                  #fs-frm textarea:focus {
+                    background-color: white;
+                    outline-style: solid;
+                    outline-width: thin;
+                    outline-color: gray;
+                    outline-offset: -1px;
+                    text-align: center;
+                  }
+                  #fs-frm [type="text"],
+                  #fs-frm [type="email"] {
+                    width: 100%;
+                    text-align: center;
+                  }
+                  #fs-frm [type="button"],
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    width: auto;
+                    cursor: pointer;
+                    -webkit-appearance: button;
+                    -moz-appearance: button;
+                    appearance: button;
+                  }
+                  #fs-frm [type="button"]:focus,
+                  #fs-frm [type="submit"]:focus,
+                  #fs-frm [type="reset"]:focus {
+                    outline: none;
+                  }
+                  #fs-frm [type="submit"],
+                  #fs-frm [type="reset"] {
+                    margin-bottom: 0;
+                  }
+                  #fs-frm select {
+                    text-transform: none;
+                  }
+                  
+                  #fs-frm [type="checkbox"] {
+                    -webkit-appearance: checkbox;
+                    -moz-appearance: checkbox;
+                    appearance: checkbox;
+                    display: inline-block;
+                    width: auto;
+                    margin: 0 .5em 0 0 !important;
+                    text-align: center;
+                  }
+                  
+                  #fs-frm [type="radio"] {
+                    -webkit-appearance: radio;
+                    -moz-appearance: radio;
+                    appearance: radio;
+                  }
+                  
+                  /* address, locale */
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    display: inline;
+                  }
+                  #fs-frm fieldset.locale input[name="city"] {
+                    width: 52%;
+                  }
+                  #fs-frm fieldset.locale select[name="state"],
+                  #fs-frm fieldset.locale input[name="postal-code"] {
+                    width: 20%;
+                  }
+                  #fs-frm fieldset.locale input[name="city"],
+                  #fs-frm fieldset.locale select[name="state"] {
+                    margin-right: 3%;
+                  }
+                  </style>
+
         </body>
 
         </html>
@@ -326,6 +491,42 @@
                 
                 setInterval(checkTime, 1000);
                 checkTime();</script>
+
+                <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xdojkzaq",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 </body>
 
 </html>
