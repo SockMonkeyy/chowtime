@@ -105,10 +105,11 @@
   }
   
   .flip-box p {
-    font-size: 1.3rem;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.3em;
     color: white;
-    padding: 1rem;
+    padding: .5rem;
+    width: 100%;
   }
   
   .flip-box-img {
