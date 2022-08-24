@@ -4482,7 +4482,8 @@ fieldset:disabled .btn {
     align-items: center;
     justify-content: space-between;
     padding-top: .5rem;
-    padding-bottom: .5rem
+    padding-bottom: .5rem;
+    background-color: #0000008c;
 }
 
 .navbar>.container,
@@ -4669,7 +4670,7 @@ fieldset:disabled .btn {
     .navbar-expand-lg {
         flex-wrap: nowrap;
         justify-content: flex-start;
-        background-color: rgba(0, 0, 0, 0)
+        background-color: rgba(0, 0, 0, 0.671)
     }
 
     .navbar-expand-lg .navbar-nav {
@@ -7114,7 +7115,8 @@ fieldset:disabled .btn {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030
+    z-index: 1030;
+    
 }
 
 .fixed-bottom {
