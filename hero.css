@@ -202,3 +202,48 @@ body {
 .float {
   cursor: pointer;
 }
+
+
+.circle {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 100vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo1 {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	background: url(./Assets/CHOW.svg);
+	background-size: cover;
+	border-radius: 100vmax;
+	background-position: center;
+}
+
+.text {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: consolas;
+	color: #fff;
+	text-shadow: 0 0 10px #0ff;
+	font-size: 17px;
+	animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span {
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+}
