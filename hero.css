@@ -42,6 +42,11 @@ body {
 
 }
 
+.welcome{
+  font-family: 'Mochiy Pop One', sans-serif;
+  font-size: 1.5rem;
+}
+
 .hero-main {
   color: #e89e30;
   font-family: 'Mochiy Pop One', sans-serif;

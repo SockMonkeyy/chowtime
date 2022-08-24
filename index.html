@@ -29,10 +29,12 @@
             <link rel="stylesheet" href="style.css">
             <link rel="stylesheet" href="hero.css">
             <link rel="stylesheet" href="services.css">
-
-            <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
+            <link rel="stylesheet" href="hours.css">
             
             <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
+            <!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
+            
+            
         </head>
 
         <body>
@@ -69,8 +71,8 @@
                 <div class="hero-text">
 
                     <div class="col">
-                        <p class="white welcome">Welcome To</p>
-                        <h1 class="hero-main mt-2">Chow Time BHM</h1>
+                        <p class="welcome">Welcome To</p>
+                        <h1 class="hero-main mt-3">Chow Time BHM</h1>
                         <p class="mt-3">"SERVING BIRMINGHAM OUR SPIN ON AMERICAN SOUTHERN CUISINE
                             "</p>
                     </div>
@@ -202,12 +204,64 @@
                     </div>
                 </div>
 
+                <div id="main1" class="">
+  
+                    
+                    <div id="logo"><a href="" target="_blank"><img src="./Assets/CHOW.svg" /></a></div>
+                    <div id="timeDiv" class="col"></div>
+                    <div>
+                    <label class="viewOpen1 rounded col" for="modal-state">View Hours&nbsp;&nbsp;<i class="fa fa-clock-o"></i></label>
+                </div>
+                
+                    <input type="checkbox" name="modal-state" id="modal-state">
+                    <div class="modal-overlay">
+                      <label for="modal-state" class="modal-overlay-close"></label>
+                      <div class="modal1">
+                        <label class="button-close1" for="modal-state"><i class="fa fa-times"></i></label>
+                        <h2 class="h2main">We're Open At These Times</h2>
+                        <div id="Wednesday" class="dateTime">
+                          <div class="day">Wednesday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                        <br>
+                        <div id="Thursday" class="dateTime">
+                          <div class="day">Thursday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                        <br>
+                        <div id="Friday" class="dateTime">
+                          <div class="day">Friday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                        <br>
+                        <div id="Saturday" class="dateTime">
+                          <div class="day">Saturday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                        <br>
+                        <div id="Sunday" class="dateTime">
+                          <div class="day">Sunday</div>
+                          <div class="time">Closed</div>
+                        </div>
+                        <br>
+                        <div id="Monday" class="dateTime">
+                          <div class="day">Monday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                        <br>
+                        <div id="Tuesday" class="dateTime">
+                          <div class="day">Tuesday</div>
+                          <div class="time">10am - 2pm</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
         </body>
 
         </html>
 
-
-
+        
         <script src="app.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -218,6 +272,59 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+
+            <script>var now = new Date();
+                var weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+                
+                var checkTime = function () {
+                    var today = weekday[now.getDay()];
+                    var timeDiv = document.getElementById('timeDiv');
+                    var dayOfWeek = now.getDay();
+                    var hour = now.getHours();
+                    var minutes = now.getMinutes();
+                
+                    //add AM or PM
+                    var suffix = hour >= 12 ? "PM" : "AM";
+                
+                    // add 0 to one digit minutes
+                    if (minutes < 10) {
+                        minutes = "0" + minutes
+                    };
+                
+                    if ((dayOfWeek == 0 || dayOfWeek == 6) && hour >= 13 && hour <= 23) {
+                        hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+                        timeDiv.innerHTML = 'it\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re open!';
+                        timeDiv.className = 'open1';
+                    }
+                
+                    else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 16 && hour <= 23) {
+                        hour = ((hour + 11) % 12 + 1);
+                        timeDiv.innerHTML = 'it\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re open!';
+                        timeDiv.className = 'open1';
+                    }
+                
+                    else {
+                        if (hour == 0 || hour > 12) {
+                            hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
+                        }
+                        timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re open for pre-orders!';
+                        timeDiv.className = 'closed1';
+                    }
+                };
+                
+                var currentDay = weekday[now.getDay()];
+                var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+                $(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+                
+                setInterval(checkTime, 1000);
+                checkTime();</script>
 </body>
 
 </html>

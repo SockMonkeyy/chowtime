@@ -5,18 +5,18 @@
   }
   
   #main1 {
-    background: url(./Assets/hero1.jpg);
+    background: url(./Assets/railroadpark.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     text-align: center;
    display: block;
-   
+   font-family: 'Mochiy Pop One', sans-serif;
   }
   
   #logo {
-    top: 10%;
+    top: 12%;
     position: relative;
     left: 0;
     right: 0;
@@ -30,7 +30,7 @@
   }
   
   #darkBack {
-    position: relative;
+    position: absolute;
     background: rgba(31, 31, 31, 0.589);
     width: 100vw;
     height: 100%;
@@ -44,7 +44,7 @@
     background: #fff;
     width: 85%;
     margin: 0 auto;
-    top: 50%;
+    top: 25%;
     padding: 10px;
     border-radius: 3px;
     -webkit-box-shadow: 0 8px 16px -8px #adadad;
@@ -61,26 +61,29 @@
   }
   
   .closed1 {
-    color: rgba(231, 76, 60, 0.85);
-    border: 2px solid rgba(231, 76, 60, 0.8);
+    color: #27ae60;
+    border: 2px solid #27ae60;
   }
   
   .viewOpen1 {
-    font-size: 15px;
+    font-size: 1rem;
     text-transform: uppercase;
     position: relative;
+    display: block;
     border: 2px solid rgba(70, 70, 70, 0.7);
     max-width: 170px;
     background: #fff;
     width: 100%;
-    color: rgba(70, 70, 70, 0.8);
-    margin: 0 auto;
+    color: #e89e30;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin: 0 auto;  
     padding: 10px;
     border-radius: 3px;
-    -webkit-box-shadow: 0 8px 16px -8px #adadad;
-    -moz-box-shadow: 0 8px 16px -8px #adadad;
-    box-shadow: 0 8px 16px -8px #adadad;
+  
     cursor: pointer;
+  font-family: 'Mochiy Pop One', sans-serif;
+  
+
   }
   
   .viewOpen1 i {
@@ -121,8 +124,8 @@
   
   @media all and (max-height: 420px) {
     #timeDiv, .viewOpen1 {
-      top: 50%;
-      margin: 0 auto;
+      top: 60%;
+      margin-top: -10%;
     }
   }
   /* view hours modal */
@@ -157,7 +160,7 @@
   }
   
   .modal1 {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
     padding: 30px 25px;
     background: #fff;
@@ -167,7 +170,8 @@
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     line-height: 1.8;
-    margin-top: 10%;
+    margin-top: 50%;
+    
   }
   
   
@@ -180,18 +184,21 @@
     margin-bottom: 10px;
     padding-bottom: 10px;
     font-weight: 400;
+    font-family: 'Mochiy Pop One', sans-serif;
+    color: #e89e30;
   }
   
   @media all and (max-width: 470px) {
     .modal1 {
       width: 75%;
+      
     }
     .modal1 h2{
       font-size: 20px;
     }
   }
   
-  #modal-state:checked + .modal-overlay .modal1 {
+  #modal-state:checked + .modal-overlay .modal {
     top: 20%;
   }
   
