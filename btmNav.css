@@ -131,6 +131,11 @@
   box-shadow: 0px 10px 10px #fabc5f;
   transform: translateY(-7px);
 }
+.social-icons::after{
+    background-color:#e89e30;
+    color:#fff;
+}
+
 .social-icons.size-sm a
 {
   line-height:34px;
