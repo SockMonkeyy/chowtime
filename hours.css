@@ -236,3 +236,7 @@
     right: 0;
     cursor: pointer
 }
+
+.fa.fa-clock-o::before{
+    color: white;
+}
