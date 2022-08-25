@@ -46,9 +46,9 @@
     margin: 0 auto;
     top: 25%;
     border-radius: 3px;
-    -webkit-box-shadow: 0 8px 16px -8px #adadad;
-    -moz-box-shadow: 0 8px 16px -8px #adadad;
-    box-shadow: 0 8px 16px -8px #adadad;
+    -webkit-box-shadow: 0 8px 16px -8px #e89e30;
+    -moz-box-shadow: 0 8px 16px -8px #e89e30;
+    box-shadow: 0 8px 16px -8px #e89e30;
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
