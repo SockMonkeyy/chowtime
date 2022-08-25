@@ -70,7 +70,7 @@
 
 
             <!--Hero Image-->
-            <div class="hero-image">
+            <div class="hero-image parallax">
                 <div class="hero-text">
 
                     <div class="col">
@@ -101,17 +101,19 @@
                     </div>
 
                     <div class="col-sm-6"><a  class="float">
+                        <div class="row iphonebg" style="background-color:#e89e30">
                             <img class="iphone" src="./Assets/iphonelg.png" alt="iPhone">
-                            
-                           
                             <div class="chow mb-1"><a class="order logo glf-button" data-glf-cuid="55eb483c-3d6a-4149-896b-28761a8d1033"
                                 data-glf-ruid="40a8854a-c8e1-4055-a049-efc0997aa5e1">Order Now</a></div>
                         </div>
+                           
+                        </div>
 
 
-                    <div class="white">
+                    <div class="white parallax">
+                        <div class="newOnline t mt-3 mb-3" style="margin: 0 auto; width: 100%; height: auto;">
                         <p class="chow pt-3">NEW! Online Ordering</p>
-                        <p class="p-2 pt-0">Online ordering NOW enabled for delivery. Just tell us what you want and
+                        <p class="pt-0">Online ordering NOW enabled for delivery. Just tell us what you want and
                             we'll make it happen!
                             All orders are manually confirmed by us directly. You will be provided payment processing
                             information once your order has been accepted. Find out in real-time when your food is
@@ -121,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="box-container mt-5 services">
+                <div class="box-container mt-5 rounded services">
                     <div class="box-item">
                         <div class="flip-box">
 
@@ -207,7 +209,7 @@
                     </div>
                 </div>
 
-                <div id="main1" class="">
+                <div style="height: 70vh;" id="main1" class="pt-2 parallax rounded mt-4">
   
                     
                     <div id="logo"><a href="" target="_blank"><img src="./Assets/CHOW.svg" /></a></div>
@@ -263,8 +265,8 @@
 
 
 
-<div class="container-fluid contactForm" id="contact">
-                  <form class="col contact" style="background-image: url(./Assets/hero2.jpg);" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdojkzaq" method="post">
+<div class=" contactForm" id="contact" style="width: 99%; margin:0 auto;">
+                  <form class="row contact" style="background-image: url(./Assets/.jpg);" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdojkzaq" method="post">
                     <fieldset id="fs-frm-inputs">
                         <div class="contact1">
                             <h1 class="chow pb-2">Contact Us:</h1>
@@ -280,13 +282,12 @@
                     
                   </form>
                 </div>
-                </div>
+                
 
   
                   <style>/* reset */
 
 .contact{
-    padding: 2rem;
     background-image: url(./Assets/hero2.jpg);
     background-position: center;
     background-size: cover;
@@ -484,7 +485,7 @@
                         if (dayofweek = 0 || hour == 0 || hour > 12) {
                             hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                         }
-                        timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - we\'re closed, but you can place a pre-order';
+                        timeDiv.innerHTML = 'It\'s ' + today + ' ' + hour + ':' + minutes + suffix + ' - sorry we\'re closed, but it\'s never to early to order lunch for tomorrow!';
                         timeDiv.className = 'closed1';
                     }
                 };

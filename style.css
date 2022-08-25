@@ -44,7 +44,11 @@
         scroll-behavior: smooth
     }
 }
-
+html{
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+}
 body {
     height: 100%;
     margin: 0;
@@ -11803,4 +11807,14 @@ fieldset:disabled .btn {
 
 .menu{
     cursor: pointer;
+}
+
+.parallax{
+    background: url('./Assets/railroadpark.jpg') repeat fixed 100%;
+    background-size: cover;
+}
+
+.parallax1{
+    background: url('./Assets/bhm.jpg') repeat fixed 100%;
+    background-size: cover;
 }

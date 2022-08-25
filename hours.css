@@ -5,7 +5,7 @@
 }
 
 #main1 {
-    background: url(./Assets/railroadpark.jpg);
+    background-image: url(./Assets/bhm.jpg);
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -41,7 +41,7 @@
     text-transform: uppercase;
     position: relative;
     max-width: 325px;
-    background: #fff;
+    background-color: #000000b0;
     width: 85%;
     margin: 0 auto;
     top: 25%;
@@ -62,7 +62,8 @@
 
 .closed1 {
     color: red;
-    border: 2px solid red;
+    border: 2px solid rgba(70, 70, 70, 0);
+    background-color: #0000006b;
 }
 
 .viewOpen1 {
@@ -70,9 +71,9 @@
     text-transform: uppercase;
     position: relative;
     display: block;
-    border: 2px solid rgba(70, 70, 70, 0.7);
+    border: 2px solid rgba(70, 70, 70, 0);
+    background-color: #0000006b;
     max-width: 170px;
-    background: #fff;
     width: 100%;
     color: #e89e30;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);

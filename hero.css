@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 html {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: sticky;
+  
 }
 
 body {
-  background-image: url(./Assets/railroadpark.jpg);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: white;
+  background-color: black;
 
 }
 
@@ -92,6 +96,15 @@ body {
 
 
 /*Floating Image*/
+.iphonebg{
+  background-color: #e89e30;
+  border-radius: 100%;
+  z-index: 5;
+  position: relative;
+ width: auto;
+ margin: 0 auto;
+  
+}
 .iphone {
   animation-name: floating;
   animation-duration: 3s;
@@ -100,8 +113,8 @@ body {
   margin: 0 auto;
   width: 100%;
   border-radius: 100%;
-  margin-bottom: -10%;
-  background-color: #e89e30;
+  margin-bottom: 0%;
+  
   cursor: pointer;
   position: relative;
 

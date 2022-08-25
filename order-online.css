@@ -37,3 +37,13 @@
     color: white;
     transform: translateY(-7px);
   }
+
+
+  .newOnline{
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    display: block;
+  }
