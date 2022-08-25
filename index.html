@@ -117,11 +117,13 @@
                             </div>
 
                     </div>
+              
 
 
                     <div class="white parallax">
-                        <div class="newOnline t mt-3 mb-3" style="margin: 0 auto; width: 100%; height: auto;">
-                            <p class="chow pt-3">NEW! Online Ordering</p>
+                        <div class="newOnline  mt-3 mb-3" style="margin: 0 auto; width: 100%; height: auto;">
+                           <div class="par" >
+                            <p class="chow pt-3 ">NEW! Online Ordering</p>
                             <p class="pt-0">Online ordering NOW enabled for delivery. Just tell us what you want and
                                 we'll make it happen!
                                 All orders are manually confirmed by us directly. You will be provided payment
@@ -129,7 +131,7 @@
                                 information once your order has been accepted. Find out in real-time when your food is
                                 ready.
                                 Watch on-screen when your food gets delivered.</p>
-
+                            </div>
                         </div>
                     </div>
 
@@ -546,12 +548,13 @@
             weekday[5] = "Friday";
             weekday[6] = "Saturday";
 
-            var checkTime = function () {
-                var today = weekday[now.getDay()];
-                var timeDiv = document.getElementById('timeDiv');
-                var dayOfWeek = now.getDay();
-                var hour = now.getHours();
-                var minutes = now.getMinutes();
+            let checkTime = function () {
+                let today = weekday[now.getDay()];
+                let timeDiv = document.getElementById('timeDiv');
+                let dayOfWeek = now.getDay();
+                let hour = now.getHours();
+                let minutes = now.getMinutes();
+                let time = now.getTime();
 
                 //add AM or PM
                 var suffix = hour >= 12 ? "PM" : "AM";
@@ -561,13 +564,13 @@
                     minutes = "0" + minutes
                 };
 
-                if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 6) && hour >= 10 && hour <= 14) {
+                if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 6) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
                     timeDiv.className = 'open1';
                 }
 
-                else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 14) {
+                else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1);
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
                     timeDiv.className = 'open1';
@@ -577,10 +580,11 @@
                     if (dayofweek = 0 || hour == 0 || hour > 12) {
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal!!`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal!!`;
 
                     timeDiv.className = 'closed1';
                 }
+                console.log(`${hour}:${minutes}`)
             };
 
             var currentDay = weekday[now.getDay()];

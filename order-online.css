@@ -46,4 +46,10 @@
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     display: block;
+    
   }
+
+  .par{
+    position: static;
+  }
+  
