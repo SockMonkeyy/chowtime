@@ -46,9 +46,7 @@
     margin: 0 auto;
     top: 25%;
     border-radius: 3px;
-    -webkit-box-shadow: 0 8px 16px -8px #e89e30;
-    -moz-box-shadow: 0 8px 16px -8px #e89e30;
-    box-shadow: 0 8px 16px -8px #e89e30;
+   
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
@@ -57,12 +55,15 @@
 .open1 {
     color: #27ae60;
     border: 2px solid #27ae60;
+    box-shadow: 0 8px 16px -8px #27ae60;
 }
+
 
 .closed1 {
     color: red;
     border: 2px solid rgba(70, 70, 70, 0);
     background-color: #0000006b;
+    box-shadow: 0 8px 16px -8px red;
 }
 
 .viewOpen1 {
