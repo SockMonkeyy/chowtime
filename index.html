@@ -72,12 +72,13 @@
             <!--Hero Image-->
             <div class="hero-image parallax">
                 <div class="hero-text">
-
+                    
+                   
                     <div class="col">
                         <p class="welcome">Welcome To</p>
                         <h1 class="hero-main chow mt-3">Chow Time BHM</h1>
                         <p class="mt-3">"SERVING BIRMINGHAM OUR SPIN ON AMERICAN SOUTHERN CUISINE
-                            "</p>
+                            "</p><div id="timeDiv1" class="col"></div>
                     </div>
                     <span class="glf-button1 rounded" data-glf-cuid="55eb483c-3d6a-4149-896b-28761a8d1033"
                         data-glf-ruid="40a8854a-c8e1-4055-a049-efc0997aa5e1">View Menu</span>
@@ -238,6 +239,7 @@
 
                         <div id="logo"><a href="" target="_blank"><img src="./Assets/CHOW.svg" /></a></div>
                         <div id="timeDiv" class="col"></div>
+                     
                         <div>
                             <label class="viewOpen1 rounded col" for="modal-state">View Hours&nbsp;&nbsp;<i
                                     class="fa fa-clock-o"></i></label>
@@ -249,7 +251,7 @@
                             <div class="modal1 rounded">
                                 <label class="button-close1" for="modal-state"><i class="fa clock fa-times"></i></label>
                                
-                                <h2 class="h2">We're Open At These Times <i class="fa fa-clock-o"></i></h2>
+                                <h2 class="h2">We're Open At These Times <br><i class="fa fa-clock-o"></i></h2>
                                 
                                 <div id="Wednesday" class="dateTime">
                                     <div class="day">Wednesday</div>
@@ -584,12 +586,16 @@
                     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
                     timeDiv.className = 'open1';
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv1.className = 'open2';
                 }
 
                 else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1);
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
                     timeDiv.className = 'open1';
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv1.className = 'open2';
                 }
 
                 else {
@@ -597,7 +603,8 @@
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal!`;
-
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal!`;
+                    timeDiv1.className = 'closed2'
                     timeDiv.className = 'closed1';
                 }
 
