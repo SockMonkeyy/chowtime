@@ -72,6 +72,7 @@
     text-transform: uppercase;
     position: relative;
     max-width: 50%;
+    color: #e89e30;
     background-color: #00000094;
     top: 75%;
     left: 25%;
@@ -180,13 +181,7 @@
     color: rgba(70, 70, 70, 0.8);
 }
 
-@media all and (max-width: 600px) {
-    #timeDiv {
-        margin-bottom: 20px;
-        color: red;
-        max-width: 90%;
-    }
-}
+
 @media all and (max-width: 600px){
 .hours{
     background-image: url(./Assets/bama.jpg);
@@ -204,7 +199,7 @@
 @media all and (max-width: 600px) {
     #timeDiv1 {
         margin-bottom: ;
-        color: red;
+        color: #e89e30;
         max-width: 90%;
         left: 5%;
         top: 75%;
@@ -222,7 +217,7 @@
 @media all and (max-width: 375px) {
     #timeDiv1 {
         margin-bottom: ;
-        color: red;
+        color: #e89e30;
         max-width: 90%;
         left: 5%;
         top: 80%;
@@ -279,7 +274,7 @@
     #timeDiv,
     .viewOpen1 {
         top: 60%;
-        max-width: 100%;
+        max-width: 50%;
     }
 }
 
