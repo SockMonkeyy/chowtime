@@ -78,7 +78,7 @@
                         <p class="welcome">Welcome To</p>
                         <h1 class="hero-main chow mt-3">Chow Time BHM</h1>
                         <p class="mt-3">"SERVING BIRMINGHAM OUR SPIN ON AMERICAN SOUTHERN CUISINE
-                            "</p><div id="timeDiv1" class="col"></div>
+                            "
                     </div>
                     <span class="glf-button1 rounded" data-glf-cuid="55eb483c-3d6a-4149-896b-28761a8d1033"
                         data-glf-ruid="40a8854a-c8e1-4055-a049-efc0997aa5e1">View Menu</span>
@@ -89,6 +89,7 @@
             <div class="container-fluid section2 text-center " id="about">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col col-sm-6">
+                    </p><div id="timeDiv1" class="col time"></div>
                         <p class="text-left chow"> About Chow Time </p>
                         <p class="text-left white" style="line-height: 2rem;">
                             At Chow Time we offer meals of excellent quality and invite you to try our delicious food.
@@ -584,17 +585,17 @@
 
                 if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 6) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
                     timeDiv.className = 'open1';
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
                     timeDiv1.className = 'open2';
                 }
 
                 else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1);
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
                     timeDiv.className = 'open1';
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders!`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
                     timeDiv1.className = 'open2';
                 }
 
@@ -602,8 +603,8 @@
                     if (dayofweek = 0 || hour == 0 || hour > 12) {
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal!`;
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal!`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
                     timeDiv1.className = 'closed2'
                     timeDiv.className = 'closed1';
                 }

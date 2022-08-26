@@ -40,13 +40,27 @@
     font-size: 15px;
     text-transform: uppercase;
     position: relative;
-    max-width: 325px;
+    max-width: 50%;
     background-color: #000000b0;
-    width: 85%;
+
     margin: 0 auto;
     top: 25%;
     border-radius: 3px;
-   
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+}
+
+#timeDiv1 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    position: relative;
+    max-width: 80%;
+    background-color: #000000b0;
+    margin: 0 auto;
+    top: 50%;
+    border-radius: 3px;
+    line-height: 2rem;
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
@@ -58,9 +72,10 @@
     box-shadow: 0 8px 16px -8px #27ae60;
     padding: .5rem;
 }
+
 .open2 {
-    color: #e89e30;
-    
+    color: green;
+
     padding: .5rem;
 }
 
@@ -72,10 +87,11 @@
     box-shadow: 0 8px 16px -8px red;
     padding: .5rem;
 }
+
 .closed2 {
-    color: #e89e30;
+    color: red;
     border: 2px solid rgba(70, 70, 70, 0);
-    
+
     padding: .5rem;
     margin-bottom: .5rem;
 }
@@ -94,7 +110,7 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
-   margin-top: -3%;
+    margin-top: -3%;
     cursor: pointer;
     font-family: 'Mochiy Pop One', sans-serif;
     animation-name: floating;
@@ -103,11 +119,11 @@
     animation-timing-function: ease-in-out;
 }
 
-.viewOpen1:hover{
+.viewOpen1:hover {
     background-color: #e89e3079;
     box-shadow: 0px 15px 20px rgba(245, 190, 70, 0.829);
     color: #fff;
-    
+
 }
 
 .viewOpen1 i {
@@ -120,6 +136,19 @@
     }
 }
 
+
+
+@media all and (max-width: 375px) {
+    #timeDiv.closed1 {
+        margin-top: -30%;
+        max-width: 100%;
+    }
+}
+@media all and (max-width: 376px) {
+    #viewOpen1 {
+        margin-top: -10%;
+    }
+}
 @media all and (min-width: 601px) {
     #timeDiv {
         margin-right: 15px;
@@ -151,7 +180,7 @@
     #timeDiv,
     .viewOpen1 {
         top: 60%;
-
+        max-width: 100%;
     }
 }
 
@@ -204,7 +233,10 @@
 
 @media (max-width: 544px) {
     .viewOpen1 {
-      margin-top: -50%;
+        margin-top: -20%;
+    }
+    #timeDiv.closed1{
+        max-width: 100%;
     }
 }
 
@@ -226,7 +258,7 @@
     .modal1 {
         width: 80%;
         margin-top: 50%;
-   
+
     }
 
     .modal1 h2 {
@@ -258,8 +290,6 @@
     cursor: pointer
 }
 
-.fa.fa-clock-o::before{
+.fa.fa-clock-o::before {
     color: #e89e30;
 }
-
-
