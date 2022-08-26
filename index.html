@@ -256,7 +256,7 @@
                                     <label class="button-close1" for="modal-state"><i
                                             class="fa clock fa-times"></i></label>
 
-                                    <h2 class="h2">We're Open At These Times <br><i class="fa fa-clock-o"></i></h2>
+                                    <h2 class="h2">Hours of Operation <br><i class="fa fa-clock-o"></i></h2>
 
                                     <div id="Wednesday" class="dateTime">
                                         <div class="day">Wednesday</div>
@@ -580,6 +580,7 @@
                 let hour = now.getHours();
                 let minutes = now.getMinutes();
                 let time = now.getTime();
+               
 
                 //add AM or PM
                 var suffix = hour >= 12 ? "P.M." : "A.M.";
@@ -610,7 +611,7 @@
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
                     timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal \n\n   We Open at 10:00 A.M.`;
                     timeDiv1.className = 'closed2'
                     timeDiv.className = 'closed1';
                 }
