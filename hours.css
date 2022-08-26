@@ -42,7 +42,7 @@
     position: relative;
     max-width: 50%;
     background-color: #000000b0;
-    color: #e89e30;
+    
     margin: 0 auto;
     top: 25%;
     border-radius: 3px;
@@ -57,11 +57,11 @@
     text-transform: uppercase;
     position: relative;
     max-width: 80%;
-    background-color: #000000b0;
-    margin: 0 auto;
-    top: 50%;
+    background-color: #00000063;
+    top: 80%;
+    left: 25%;
+    text-align: center;
     border-radius: 3px;
-    line-height: 2rem;
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
@@ -138,6 +138,29 @@
         max-width: 90%;
     }
 }
+@media all and (max-width: 600px) {
+    #timeDiv1 {
+        margin-bottom: ;
+        color: red;
+        max-width: 90%;
+        left: 5%;
+        top: 83%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #timeDiv1 {
+        margin-bottom: ;
+        color: red;
+        max-width: 90%;
+        left: 5%;
+        top: 87%;
+        text-align: center;
+        z-index: 5;
+    }
+}
+
 
 
 
