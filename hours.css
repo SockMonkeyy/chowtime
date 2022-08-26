@@ -57,7 +57,7 @@
     text-transform: uppercase;
     position: relative;
     max-width: 50%;
-    background-color: #00000063;
+    background-color: #00000094;
     top: 80%;
     left: 25%;
     text-align: center;
@@ -74,10 +74,14 @@
     padding: .5rem;
 }
 
-.open2 {
+#timeDiv1.open2 {
     color: green;
-
+    border: 2px solid #27ae60;
+    box-shadow: 0 8px 16px -8px #27ae60;
     padding: .5rem;
+    position: relative;
+    width: 50%;
+    left: 25%;
 }
 
 
