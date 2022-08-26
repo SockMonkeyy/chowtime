@@ -34,7 +34,7 @@
 }
 
 .left{
-  background: url("./Assets/hero2.jpg") no-repeat center;
+  background: url("./Assets/hero2\.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -126,8 +126,8 @@ textarea{
 
 
 .contact{
-    padding: 2rem;
-    background-image: url(./Assets/hero2.jpg);
+   padding-top: 1rem;
+    background-image: url(./Assets/railroadpark.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 5px;
@@ -144,6 +144,7 @@ textarea{
     border-radius: 5px;
     font-family: 'Mochiy Pop One', sans-serif;
     color: #e89e30;
+    margin: 1rem;
     
 }
 
