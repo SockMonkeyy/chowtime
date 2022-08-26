@@ -200,9 +200,17 @@
     #timeDiv1 {
         margin-bottom: ;
         color: #e89e30;
-        max-width: 90%;
-        left: 5%;
+        max-width: 95%;
+        left: 3%;
         top: 75%;
+        text-align: center;
+    }
+}
+@media all and (min-width: 600px) {
+    #timeDiv1 {
+        margin-bottom: ;
+        color: #e89e30;
+       
         text-align: center;
     }
 }
@@ -216,13 +224,7 @@
 
 @media all and (max-width: 375px) {
     #timeDiv1 {
-        margin-bottom: ;
-        color: #e89e30;
-        max-width: 90%;
-        left: 5%;
-        top: 80%;
-        text-align: center;
-        z-index: 5;
+     display: none;
     }
 }
 
@@ -236,9 +238,9 @@
     }
 }
 
-@media all and (max-width: 376px) {
+@media all and (max-width: 375px) {
     .viewOpen1 {
-        margin-top: 50%;
+        display: none;
         
     }
 }
@@ -269,14 +271,6 @@
     font-weight: 600;
 }
 
-@media all and (max-height: 420px) {
-
-    #timeDiv,
-    .viewOpen1 {
-        top: 60%;
-        max-width: 50%;
-    }
-}
 
 /* view hours modal */
 
@@ -327,8 +321,7 @@
 
 @media (max-width: 544px) {
     .viewOpen1 {
-        margin-top: 45%;
-        z-index: 5;
+      display: none;
         
     }
 
@@ -344,7 +337,6 @@
         
     }
 }
-
 
 
 .modal1 h2 {

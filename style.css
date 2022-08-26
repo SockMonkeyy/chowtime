@@ -4517,15 +4517,15 @@ fieldset:disabled .btn {
 .navbar-brand span {
     display: block;
     margin: 11px 0 17px 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #e89e30;
-    text-shadow: 0 13.36px 8.896px #242424,0 -4px 1px rgb(0, 0, 0);
+    text-shadow: 0 13.36px 8.896px #ffffff,0 -4px 1px rgb(0, 0, 0);
   }
 
   .navbar-brand span:hover {
     display: block;
     margin: 11px 0 17px 0;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #ffffff;
     text-shadow: 0 13.36px 8.896px #e89e30,0 -2px 1px #e89e30;
   }
