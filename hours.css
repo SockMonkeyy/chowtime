@@ -5,14 +5,32 @@
 }
 
 #main1 {
-    background-image: url(./Assets/bhm.jpg);
-    background-size: cover;
+    background-image: url(./Assets/hours.jpg);
+    background-size:contain;
     background-position: center;
-    height: 60vh;
+    background-repeat: no-repeat;
     width: 100%;
     text-align: center;
     display: block;
     font-family: 'Mochiy Pop One', sans-serif;
+    height: 100vh;
+}
+
+element.style{
+    height: 100vh;
+}
+
+.hours{
+    background-image: url(./Assets/bama.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.466);
+    overflow: hidden;
+    display: block;
+    height: 100vh;
+    padding: 0;
 }
 
 #logo {
@@ -171,7 +189,20 @@
         max-width: 90%;
     }
 }
-
+@media all and (max-width: 600px){
+.hours{
+    background-image: url(./Assets/bama.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-color: rgba(0, 0, 0, 0.466);
+    overflow: hidden;
+    display: block;
+    height: 50vh;
+    padding: 0;
+}
+}
 @media all and (max-width: 600px) {
     #timeDiv1 {
         margin-bottom: ;
@@ -184,10 +215,8 @@
 }
 @media all and (max-width: 600px) {
     #timeDiv.open1 {
-        margin-bottom: ;
         color: green;
         max-width: 90%;
-     
         text-align: center;
     }
 }

@@ -239,14 +239,12 @@
                         </div>
                     </div>
 
-                    <div id="hours">
-                    <div style="height: 70vh;" id="main1" class="pt-2 parallax rounded mt-4">
-                            <div id="logo"><a href="" target="_blank"><img src="./Assets/CHOW.svg" /></a></div>
-                            <div id="timeDiv" class="col"></div>
+                    <div id="hours" class="hours">
+                    <div style="height: 100vh;" id="main1" class="parallax rounded">
+                           
 
                             <div>
-                                <label class="viewOpen1 rounded col" for="modal-state">View Hours&nbsp;&nbsp;<i
-                                        class="fa fa-clock-o"></i></label>
+                               
                             </div>
 
                             <input type="checkbox" name="modal-state" id="modal-state">
@@ -592,16 +590,14 @@
 
                 if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 6) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open and accepting your orders`;
-                    timeDiv.className = 'open1';
+                    
                     timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open and accepting your orders`;
                     timeDiv1.className = 'open2';
                 }
 
                 else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1);
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting and your orders`;
-                    timeDiv.className = 'open1';
+                   
                     timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting and your orders`;
                     timeDiv1.className = 'open2';
                 }
@@ -610,10 +606,10 @@
                     if (dayofweek = 0 || hour == 0 || hour > 12) {
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
+                   
                     timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal \n\n   We Open at 10:00 A.M.`;
                     timeDiv1.className = 'closed2'
-                    timeDiv.className = 'closed1';
+                   
                 }
 
             };
