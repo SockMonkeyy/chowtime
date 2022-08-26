@@ -73,7 +73,7 @@
     position: relative;
     max-width: 50%;
     background-color: #00000094;
-    top: 80%;
+    top: 75%;
     left: 25%;
     text-align: center;
     border-radius: 3px;
@@ -81,6 +81,7 @@
     vertical-align: top;
     font-weight: 600;
 }
+
 
 .open1 {
     color: #27ae60;
@@ -159,7 +160,7 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
-    margin-top: -3%;
+    top: 55%;
     cursor: pointer;
     font-family: 'Mochiy Pop One', sans-serif;
     animation-name: floating;
@@ -224,7 +225,7 @@
         color: red;
         max-width: 90%;
         left: 5%;
-        top: 75%;
+        top: 80%;
         text-align: center;
         z-index: 5;
     }
@@ -241,8 +242,9 @@
 }
 
 @media all and (max-width: 376px) {
-    #viewOpen1 {
-        margin-top: -10%;
+    .viewOpen1 {
+        margin-top: 50%;
+        
     }
 }
 
@@ -330,11 +332,21 @@
 
 @media (max-width: 544px) {
     .viewOpen1 {
-        margin-top: -20%;
+        margin-top: 45%;
+        z-index: 5;
+        
     }
 
     #timeDiv.closed1 {
         max-width: 100%;
+    }
+}
+
+@media (min-width: 842px) {
+    .viewOpen1 {
+        margin-top: 0%;
+        z-index: 5;
+        
     }
 }
 
