@@ -592,17 +592,17 @@
 
                 if ((dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 6) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open and accepting your orders`;
                     timeDiv.className = 'open1';
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open and accepting your orders`;
                     timeDiv1.className = 'open2';
                 }
 
                 else if ((dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) && hour >= 10 && hour <= 13) {
                     hour = ((hour + 11) % 12 + 1);
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting and your orders`;
                     timeDiv.className = 'open1';
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting your orders`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} we're open accepting and your orders`;
                     timeDiv1.className = 'open2';
                 }
 
