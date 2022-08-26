@@ -77,11 +77,12 @@
 #timeDiv1.open2 {
     color: green;
     border: 2px solid #27ae60;
-    box-shadow: 0 8px 16px -8px #27ae60;
+    box-shadow: 0 20px 20px 2px #27ae60;
     padding: .5rem;
     position: relative;
     width: 50%;
     left: 25%;
+    background-color: #000000a9;
 }
 
 
