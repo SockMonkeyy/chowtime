@@ -42,13 +42,14 @@
     position: relative;
     max-width: 50%;
     background-color: #000000b0;
-
+    color: #e89e30;
     margin: 0 auto;
     top: 25%;
     border-radius: 3px;
     display: inline-block;
     vertical-align: top;
     font-weight: 600;
+    padding: .5rem;
 }
 
 #timeDiv1 {
@@ -133,6 +134,8 @@
 @media all and (max-width: 600px) {
     #timeDiv {
         margin-bottom: 20px;
+        color: red;
+        max-width: 90%;
     }
 }
 
