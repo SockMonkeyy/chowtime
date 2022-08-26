@@ -11812,6 +11812,7 @@ fieldset:disabled .btn {
 .parallax{
     background: url('./Assets/railroadpark.jpg') repeat fixed 100%;
     background-size: cover;
+    border-radius: 5px;
 }
 
 .parallax1{

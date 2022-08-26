@@ -34,7 +34,7 @@
 }
 
 .left{
-  background: url("./Assets/hero2\.jpg") no-repeat center;
+ 
   background-size: cover;
   height: 100%;
 }
@@ -125,7 +125,7 @@ textarea{
 }
 
 
-.contact{
+.contactMain{
    padding-top: 1rem;
     background-image: url(./Assets/railroadpark.jpg);
     background-position: center;
