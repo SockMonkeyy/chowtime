@@ -576,7 +576,7 @@
                 let time = now.getTime();
 
                 //add AM or PM
-                var suffix = hour >= 12 ? "PM" : "AM";
+                var suffix = hour >= 12 ? "P.M." : "A.M.";
 
                 // add 0 to one digit minutes
                 if (minutes < 10) {
@@ -603,8 +603,8 @@
                     if (dayofweek = 0 || hour == 0 || hour > 12) {
                         hour = ((hour + 11) % 12 + 1); //i.e. show 1:15 instead of 13:15
                     }
-                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
-                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes}${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
+                    timeDiv.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
+                    timeDiv1.innerHTML = `It's ${today} ${hour}:${minutes} ${suffix} sorry we're closed, but it's never to early to pre-order your next meal`;
                     timeDiv1.className = 'closed2'
                     timeDiv.className = 'closed1';
                 }
