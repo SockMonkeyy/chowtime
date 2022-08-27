@@ -117,7 +117,7 @@
 
         <div class="container-fluid section2 text-center" id="about">
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col col-sm-6" data-animate-in="left">
+                <div class="col col-sm-6" data-animate-in="down">
                     <p class="text-left chow"> About Chow Time <i class="fa fa-"></i> </p>
                     <p class="text-left white" style="line-height: 2rem;">
                         At Chow Time we offer meals of excellent quality and invite you to try our delicious food.
@@ -165,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="box-container mt-5 rounded services" data-animate-in="down">
+                <div class="box-container mt-5 rounded services" data-animate-in="up">
                     <div class="box-item">
                         <div class="flip-box">
 
@@ -649,7 +649,7 @@ $(function() {
       var d = 0,
         el = $(items[i]);
       if (items[i].getAttribute("data-animate-in-delay")) {
-        d = items[i].getAttribute("data-animate-in-delay") / 1000 + "s";
+        d = items[i].getAttribute("data-animate-in-delay") / 5000 + "s";
       } else {
         d = 0;
       }

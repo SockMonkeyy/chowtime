@@ -11868,7 +11868,7 @@ nav ul li a:before {
 
 [data-animate-in] {
     opacity: 0;
-    transition: transform 0.8s ease, opacity 0.8s ease
+    transition: transform 1.2s ease, opacity 1.2s ease
 }
 
 [data-animate-in="up"] {
@@ -11895,12 +11895,12 @@ nav ul li a:before {
     opacity: 1;
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
-    transition: transform 0.6s ease, opacity 0.6s ease
+    transition: transform 2s ease, opacity 2s ease
 }
 
 .fade-in1 {
     opacity: 0;
-    transition: opacity 1.3s ease
+    transition: opacity 1s ease
 }
 
 .page-loaded .fade-in,.page-loaded.fade-in {
