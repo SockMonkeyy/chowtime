@@ -365,7 +365,7 @@ body {
 	transform: rotate(45deg);
 	margin: 0 auto;
 z-index: 5;
-	animation: animate 5s 3;
+	animation: animate 5s infinite;
 }
 
 .box span:nth-child(2)
