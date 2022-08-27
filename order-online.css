@@ -6,7 +6,10 @@
 }
 
 .laptop{
-  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 1200px){
