@@ -4650,7 +4650,7 @@ nav ul li a:before {
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
         margin: 0 auto;
-        width: 150%;
+        width: 100%;
         border-radius: 100%;
         margin-bottom: -10%;
         z-index: -1;
