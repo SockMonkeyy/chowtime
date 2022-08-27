@@ -4719,9 +4719,8 @@ nav ul li a:before {
 
 @media (min-width:992px) {
     .navbar-expand-lg {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        background-color: rgba(0, 0, 0, 0.671)
+    
+       
     }
 
     .navbar-expand-lg .navbar-nav {

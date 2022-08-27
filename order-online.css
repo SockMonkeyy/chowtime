@@ -5,6 +5,10 @@
     transform: translateY(-7px);
 }
 
+.laptop{
+  
+}
+
 @media screen and (max-width: 1200px){
   .laptop{
     width: 100%;
@@ -53,6 +57,7 @@
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     display: block;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     
     
   }
