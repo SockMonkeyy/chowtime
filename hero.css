@@ -369,6 +369,30 @@ body {
 }
 
 
+@media (max-width:650px) {
+  .arrow{
+  
+  }
+    .arrow span{
+  margin-top: 6rem;
+  }
+  .arrow span:nth-child(2){
+    margin-top: 0rem;
+  }
+  }
+
+@media (max-width:415px) {
+.arrow{
+
+}
+  .arrow span{
+margin-top: 10rem;
+}
+.arrow span:nth-child(2){
+  margin-top: 0rem;
+}
+}
+
 .arrow span:nth-child(2)
 {
 	animation-delay: -0.4s;
