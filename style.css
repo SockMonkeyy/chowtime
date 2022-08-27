@@ -4519,7 +4519,7 @@ fieldset:disabled .btn {
     margin: 11px 0 17px 0;
     font-size: 1.1rem;
     color: #e89e30;
-    text-shadow: 0 13.36px 8.896px #ffffff,0 -4px 1px rgb(0, 0, 0);
+    text-shadow: 0 2.36px 8.896px #ffffff,0 -4px 1px rgb(0, 0, 0);
   }
 
   .navbar-brand span:hover {

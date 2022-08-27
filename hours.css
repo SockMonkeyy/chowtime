@@ -13,7 +13,8 @@
     text-align: center;
     display: block;
     font-family: 'Mochiy Pop One', sans-serif;
-    height: 100vh;
+    height: 50vh;
+    border-radius: 5px;
 }
 
 
