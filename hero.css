@@ -108,6 +108,11 @@ body {
   transform: translateY(-7px);
 }
 
+.bg.about{
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 5s infinite;
+}
 
 
 /*Floating Image*/
@@ -118,7 +123,7 @@ body {
   position: relative;
  width: auto;
  margin: 0 auto;
- box-shadow: 0px 20px 20px rgba(255, 255, 255, 0.63), 0 1px 6px rgb(255, 255, 255);
+ box-shadow: 0px 20px 20px #f19c1c, 0 1px 6px #e89e30;
   
 }
 .iphone {
@@ -169,17 +174,13 @@ body {
   z-index: 2;
   position: relative;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.466);
   border-radius: 5px;
   padding: 0.5rem;
-  /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-
   text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 6s infinite; 
   font-family: 'Mochiy Pop One', sans-serif;
 
 }
@@ -401,6 +402,27 @@ margin-top: 10rem;
 .arrow span:nth-child(3)
 {
 	animation-delay: -0.8s;
+}
+@-webkit-keyframes argh-my-eyes {
+  0%   { background-color: #e89e30; }
+  49% { background-color: #e08e12; }
+  50% { background-color: #e89e30; }
+  99% { background-color: #e08e12; }
+  100% { background-color: #e89e30; }
+}
+@-moz-keyframes argh-my-eyes {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+@keyframes argh-my-eyes {
+ 
+  25% { background-color: #e08e12; }
+  50% { background-color: #e89e30; }
+  75% { background-color: #e08e12; }
+  100% { background-color: #e89e30; }
 }
 
 @keyframes animate{

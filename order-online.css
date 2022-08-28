@@ -12,6 +12,10 @@
   animation-timing-function: ease-in-out;
 }
 
+.laptop:hover{
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px){
   .laptop{
     width: 100%;
