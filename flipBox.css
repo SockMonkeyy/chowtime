@@ -120,7 +120,7 @@ padding: 0 .5rem 0 .5rem;
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
-  
+  font-family: 'Source Serif Pro', serif;
   transform: translateY(-50%) translateZ(60px) scale(.94);
   -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
   -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
@@ -129,13 +129,13 @@ padding: 0 .5rem 0 .5rem;
 
 .flip-box-header {
   font-size: 2.5rem;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Source Serif Pro', serif;
 
 }
 
 .flip-box p {
   font-size: 1.5rem;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Source Serif Pro', serif;
 color: rgb(232, 158, 48);
 }
 

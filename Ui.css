@@ -8,6 +8,7 @@ body {
     padding: 0;
     margin: 0;
 z-index: -1;
+font-family: 'Source Serif Pro', serif;
 border: 1px solid black;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
@@ -599,6 +600,8 @@ text-align: left;
 }
 .bc{
     color: #e89e30;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
 }
 
 .newOnline{
@@ -640,9 +643,9 @@ text-align: left;
 }
 
 .noto{
-    font-family: 'Noto Serif Balinese', serif;
-<<<<<<< HEAD
+    font-family: 'Source Serif Pro', serif;
 }
-=======
+
+.aboutP{
+font-family: 'Source Serif Pro', serif;
 }
->>>>>>> a28dc7678ba6354bb9e1da8cada10863c2b2dd71
