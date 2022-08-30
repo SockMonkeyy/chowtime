@@ -213,7 +213,7 @@ nav.stroke ul li a:hover:after {
 .myBtn:hover{
     color: #e89e30;
     background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
-   font-size: 1.1rem;
+
   
 }
 
