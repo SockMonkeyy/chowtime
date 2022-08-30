@@ -17,6 +17,16 @@ border: 1px solid black;
     background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 5%, rgba(26, 188, 156, 1) 15%, #e89e30 100%);
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .navbar-brand {
     font-family: 'Fredoka One', cursive;
 
