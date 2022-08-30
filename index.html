@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chow Time BHM</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/7764dc2c86.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -15,7 +19,8 @@
 </head>
 
 <header>
-    <nav class="navbar stroke navbar-expand-lg fixed-top navbar-dark bdr-grd bdr-purp bg-dark1" style="padding-left: 1rem; padding-right: 1rem;">
+    <nav class="navbar stroke navbar-expand-lg fixed-top navbar-dark bdr-grd bdr-purp bg-dark1"
+        style="padding-left: 1rem; padding-right: 1rem;">
         <a class="navbar-brand" href="#"><span>Chow Time BHM</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +45,7 @@
                 </li>
 
             </ul>
-         
+
         </div>
 
     </nav>
@@ -51,8 +56,8 @@
 
 <body>
 
-    <div class="container-fluid align-items-center fade-in d-flex mastHead">
-        <div class="row">
+    <div class="container-fluid align-items-center mt-4 fade-in d-flex mastHead">
+        <div class="row mainIMG">
             <div class="col-lg-8 separator mt-5" id="laptop">
                 <img class="w-100 " src="/UIpractice/Assets/laptop.png" />
                 <img class="avatar pb-5 w-100 separator1" src="/UIpractice/Assets/iphone.png" alt="">
@@ -63,12 +68,15 @@
                     <h1 class="display-4"><span class="cursive welcome text-white"> Welcome
                             to</span><br><span style="font-weight: bold;"> ChowTime BHM</span></h1>
                     <div class="socialLeft">
-                        <ul class="social-icons mt-1 justify-content-center d-flex" >
-                            <li><a class="facebook" href="https://www.facebook.com/chowtimebhm"><i class="fa fa-facebook"></i></a>
+                        <ul class="social-icons mt-1 justify-content-center d-flex">
+                            <li><a class="facebook" href="https://www.facebook.com/chowtimebhm"><i
+                                        class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a class="twitter" href="https://www.instagram.com/chowtimebhm/"><i class="fa fa-instagram"></i></a>
+                            <li><a class="twitter" href="https://www.instagram.com/chowtimebhm/"><i
+                                        class="fa fa-instagram"></i></a>
                             </li>
-                            <li><a class="linkedin" href="mailto:chowtimebhm@gmail.com"><i class="fa fa-envelope"></i></a>
+                            <li><a class="linkedin" href="mailto:chowtimebhm@gmail.com"><i
+                                        class="fa fa-envelope"></i></a>
                             </li>
                             <li><a class="" href="tel:12053129334"><i class="fa fa-phone"></i></a></li>
                         </ul>
@@ -111,7 +119,8 @@
                     </p>
                 </div>
             </div>
-            <img class="justify-content-center driver1 col-lg-6 col-sm-12" src="./Assets/driverwphone.png" style="width: 300px; margin: 0 auto;" alt="">
+            <img class="justify-content-center align-self-center driver1 col-lg-6 col-sm-12"
+                src="./Assets/driverwphone.png" style="width: 300px; height: min-content; margin: 0 auto;" alt="">
         </div>
     </section>
 
@@ -134,12 +143,12 @@
                         class="myBtn bdr-purp1 bdr-grd1">View Menu</button></a>
             </div>
             <div class="col-lg-6 col-sm-12 d-flex align-items-center mt-5 mb-3" style="margin: 0 auto;">
-                <video class="burger" style="margin: 0 auto;" width="355px"  autoplay loop>
+                <video autoplay loop class="burger" style="margin: 0 auto;" width="355px">
                     <source src="./Assets/burger.mp4" type="video/mp4" />
-                
                     Your browser does not support the video element.
-                 </video>
-                
+                </video>
+
+
             </div>
         </div>
     </div>
@@ -300,6 +309,12 @@
                                     src="https://d2skenm2jauoc1.cloudfront.net/websites/img/pm-visa.png" alt=""></p>
                             <p class="col p-0"> <img
                                     src="https://d2skenm2jauoc1.cloudfront.net/websites/img/pm-cash.png" alt=""></p>
+                            <p class="col p-0"> <img src="./Assets/Badge_2.png" style="width: 46px; height:30px" alt="">
+                            </p>
+                            <p class="col p-0"> <img
+                                    src="./Google-Pay-Acceptance/Google Pay Mark/GPay_Acceptance_Mark_800.png"
+                                    style="width: 60px; height:30px" alt="">
+                            </p>
                         </div>
                     </div>
                     <div class="col-xs-6 col-md-3">
@@ -599,7 +614,58 @@
     });
 
 </script>
+<!-- Sample PayPal credentials (client-id) are included -->
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD&intent=capture&enable-funding=venmo"
+    data-sdk-integration-source="integrationbuilder"></script>
+<script>
+    const paypalButtonsComponent = paypal.Buttons({
+        // optional styling for buttons
+        // https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/
+        style: {
+            color: "gold",
+            shape: "pill",
+            layout: "vertical"
+        },
 
+        // set up the transaction
+        createOrder: (data, actions) => {
+            // pass in any options from the v2 orders create call:
+            // https://developer.paypal.com/api/orders/v2/#orders-create-request-body
+            const createOrderPayload = {
+                purchase_units: [
+                    {
+                        amount: {
+                            value: "88.44"
+                        }
+                    }
+                ]
+            };
+
+            return actions.order.create(createOrderPayload);
+        },
+
+        // finalize the transaction
+        onApprove: (data, actions) => {
+            const captureOrderHandler = (details) => {
+                const payerName = details.payer.name.given_name;
+                console.log('Transaction completed');
+            };
+
+            return actions.order.capture().then(captureOrderHandler);
+        },
+
+        // handle unrecoverable errors
+        onError: (err) => {
+            console.error('An error prevented the buyer from checking out with PayPal');
+        }
+    });
+
+    paypalButtonsComponent
+        .render("#paypal-button-container")
+        .catch((err) => {
+            console.error('PayPal Buttons failed to render');
+        });
+</script>
 </body>
 
 </html>
