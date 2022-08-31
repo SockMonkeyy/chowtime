@@ -580,8 +580,8 @@ imgOver {
 
 @media all and (max-width: 996px){
     .driver{
-        top:-2.5rem;
-        left: -3.5rem;
+        top:-2rem;
+        left: -4.5rem;
         width: 250px;
     }
 
