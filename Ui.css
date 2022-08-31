@@ -538,10 +538,18 @@ nav.stroke ul li a:hover:after {
     }
 }
 
-@media (min-width:275px) and (max-width:350px) {
+@media (min-width:290px) and (max-width:350px) {
     .separator1 {
         position: absolute;
-        top: -105%;
+        top: -95%;
+        left: 25%;
+    }
+}
+
+@media all and (max-width:289px) {
+    .separator1 {
+        position: absolute;
+        top: -130%;
         left: 25%;
     }
 }
@@ -627,7 +635,7 @@ text-align: left;
 
     50% {
 
-        transform: translatey(-20px);
+        transform: translatey(-15px);
     }
 
     100% {
@@ -783,6 +791,6 @@ font-size: 1rem;
 .avatar {
 	overflow: hidden;
 	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+	animation: float 5s ease-in-out infinite;
 	img { width: 100%; height: auto; }
 }
