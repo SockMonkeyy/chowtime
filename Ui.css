@@ -21,10 +21,11 @@ border: 1px solid black;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .0);
+    padding-left: calc(var(--bs-gutter-x) * .0);
     margin-right: auto;
     margin-left: auto;
+    overflow: hidden;
 }
 
 .navbar-brand {
@@ -545,13 +546,10 @@ imgOver {
         position: relative;
         left: 0vw;
     }
+   
 }
 
-.avatar {
-    overflow: hidden;
-    transform: translatey(0px);
-    animation: float 5s ease-in-out infinite;
-}
+
 .servingText{
     text-align: center;
 }
@@ -658,4 +656,70 @@ text-align: left;
 
 .aboutP{
 font-family: 'Source Serif Pro', serif;
+}
+
+/* Navigation */
+.navbtm {
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+    display: flex;
+    overflow-x: auto;
+    text-decoration: none;
+    z-index: 10;
+    width: 100%;
+    border-top: 1px solid #00000083;
+}
+
+.nav__textbtm{
+color: white;
+font-size: 1rem;
+}
+
+.nav__textbtm:hover{
+    color: #e89e30;
+    font-size: 1rem;
+    }
+
+
+.nav__link {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #e0e0e0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #313131;
+    color: #e89e30;
+    
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 2rem;
+    color: #ffffff;
+    
+}
+
+#tidio-chat-iframe { bottom: 3.5em !important; } 
+@media only screen and (max-width: 980px) {
+ /*Edit the 0px number according to your website for mobile*/
+    #tidio-chat-iframe { bottom: 3.5rem !important; }
 }
