@@ -700,7 +700,7 @@ font-family: 'Source Serif Pro', serif;
     text-decoration: none;
     z-index: 10;
     width: 100%;
-    border-top: 2px solid #00000083;
+    border-top: 3px solid #00000083;
 }
 
 .nav__textbtm{
