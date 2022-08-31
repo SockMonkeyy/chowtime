@@ -141,7 +141,7 @@ nav.stroke ul li a:hover:after {
 
 .mastHead {
     height: 100vh;
-    padding-top: 25vh;
+    padding-top: 20vh;
 }
 
 .cursive {
@@ -584,6 +584,7 @@ imgOver {
     text-align: center;
     position: relative;
     z-index: 15;
+    color: white;
 }
 @media all and (min-width: 1700px){
 .servingText{
