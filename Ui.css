@@ -213,11 +213,11 @@ nav.stroke ul li a:hover:after {
 
 .burger{
     text-align: right;
-    background-color: #e89e30;
+    background-color: #e89e3000;
     border-radius: 20%;
-    /padding: .5rem;
+    padding: .5rem;
     
-    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+    /background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
 }
 
 .myBtn{
