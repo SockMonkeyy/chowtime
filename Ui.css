@@ -700,7 +700,7 @@ font-family: 'Source Serif Pro', serif;
     text-decoration: none;
     z-index: 10;
     width: 100%;
-    border-top: 1px solid #00000083;
+    border-top: 2px solid #00000083;
 }
 
 .nav__textbtm{
@@ -729,6 +729,7 @@ font-size: 1rem;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: background-color 0.1s ease-in-out;
+    
 }
 
 .nav__link:hover {
