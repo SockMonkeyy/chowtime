@@ -588,7 +588,7 @@ imgOver {
     .driver1{
         position: relative;
         left: 0vw;
-        z-index: -1;
+        z-index: 1;
     }
    
 }
