@@ -141,12 +141,8 @@ nav.stroke ul li a:hover:after {
 
 .mastHead {
     height: 100vh;
-    padding-top: 10vh;
+    padding-top: 25vh;
 }
-
-
-    
-
 
 .cursive {
     font-family: 'Dancing Script', cursive;
@@ -212,7 +208,6 @@ nav.stroke ul li a:hover:after {
     border-radius: 20%;
     padding: 2rem;
     background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
-    
 }
 
 .myBtn{
@@ -586,9 +581,6 @@ imgOver {
 
 .servingText{
     text-align: center;
-    position: relative;
-    z-index: 15;
-    color: white;
 }
 @media all and (min-width: 1700px){
 .servingText{
@@ -708,7 +700,7 @@ font-family: 'Source Serif Pro', serif;
     text-decoration: none;
     z-index: 10;
     width: 100%;
-    border-top: 3px solid #00000083;
+    border-top: 2px solid #00000083;
 }
 
 .nav__textbtm{
