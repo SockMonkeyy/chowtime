@@ -603,6 +603,7 @@ imgOver {
 
 .servingText{
     text-align: center;
+    color: white;
 }
 @media all and (min-width: 1700px){
 .servingText{
