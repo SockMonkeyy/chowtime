@@ -752,3 +752,10 @@ font-size: 1rem;
  /*Edit the 0px number according to your website for mobile*/
     #tidio-chat-iframe { bottom: 3.5rem !important; }
 }
+
+.avatar {
+	overflow: hidden;
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
