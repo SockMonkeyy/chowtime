@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap');
 
 
 .navbar {
@@ -142,6 +143,12 @@ nav.stroke ul li a:hover:after {
 .mastHead {
     height: 100vh;
     padding-top: 15vh;
+}
+
+@media all and (max-width: 996px){
+    .mastHead {
+        padding-top: 0vh;
+    }
 }
 
 .cursive {
@@ -554,27 +561,32 @@ imgOver {
 
 .driver{
     position: relative;
-    top: -7rem;
+    top: -2rem;
     left: -6rem;
     vertical-align: text-top;
     max-width: 100vw;
     z-index: 0;
+
 }
 
 .driver1{
     position: relative;
     left: -10vw;
+
 }
 
 
 @media all and (max-width: 996px){
     .driver{
-        top:-9rem
+        top:-1rem;
+        left: -3.5rem;
+        width: 300px;
     }
 
     .driver1{
         position: relative;
         left: 0vw;
+        z-index: -1;
     }
    
 }
