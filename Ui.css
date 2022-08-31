@@ -141,8 +141,12 @@ nav.stroke ul li a:hover:after {
 
 .mastHead {
     height: 100vh;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
+
+
+    
+
 
 .cursive {
     font-family: 'Dancing Script', cursive;
