@@ -582,6 +582,8 @@ imgOver {
 
 .servingText{
     text-align: center;
+    position: relative;
+    z-index: 15;
 }
 @media all and (min-width: 1700px){
 .servingText{
