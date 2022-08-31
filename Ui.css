@@ -578,7 +578,7 @@ imgOver {
 
 @media all and (max-width: 996px){
     .driver{
-        top:-1rem;
+        top:-1.5rem;
         left: -3.5rem;
         width: 250px;
     }
@@ -593,7 +593,7 @@ imgOver {
 
 @media all and (max-width: 340px){
     .driver{
-        top:-1rem;
+        top:-2rem;
         left: -3.5rem;
         width: 200px;
     }
