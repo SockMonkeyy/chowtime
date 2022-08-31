@@ -591,6 +591,13 @@ imgOver {
    
 }
 
+@media all and (max-width: 340px){
+    .driver{
+        top:-1rem;
+        left: -3.5rem;
+        width: 200px;
+    }
+}
 
 .servingText{
     text-align: center;
