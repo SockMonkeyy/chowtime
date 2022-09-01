@@ -493,9 +493,6 @@ nav.stroke ul li a:hover:after {
 
 }
 
-.promo, .small{
-    padding-right: ;
-}
 
 @media all and (max-width: 994px) {
 
@@ -512,7 +509,7 @@ nav.stroke ul li a:hover:after {
         padding-right: 0;
         text-align: center;
     }
-}
+
 
 @media (min-width:589px) and (max-width:780px) {
     .separator1 {
@@ -610,6 +607,11 @@ imgOver {
    
 }
 
+.orderNow{
+    margin-left: 0;
+}
+
+
 @media all and (max-width: 340px){
     .driver{
         top:-2rem;
@@ -617,14 +619,20 @@ imgOver {
         width: 200px;
     }
 }
-
 .servingText{
-    text-align: center;
+    padding-left: 0rem;
     color: white;
 }
-@media all and (min-width: 1700px){
+}
+
+@media all and (min-width: 995px){
 .servingText{
-text-align: left;
+padding-left: 3rem;
+color: white;
+}
+
+.orderNow{
+    margin-left: 3rem;
 }
 
 }
@@ -633,8 +641,8 @@ text-align: left;
     .welcome{
         padding-left: 12%;
     }
+    
 }
-
 @keyframes float {
     0% {
 
