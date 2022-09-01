@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap');
 :root {
-    --gradient: linear-gradient(70deg, #e89e30, rgb(0, 128, 85), #e89e30, #30e8e8);
+    --gradient: linear-gradient(100deg, #e89e30 , rgb(8, 138, 14), #e89e30 , #30e8e8, #e89e30);
   
   }
 
@@ -47,7 +47,7 @@ body {
     background: #ddd;
     background-size: 300%;
     background-image: var(--gradient);
-    animation: bg-animation 35s infinite;
+    animation: bg-animation 160s infinite;
 }
 
 @keyframes bg-animation {
