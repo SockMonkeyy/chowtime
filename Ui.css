@@ -493,6 +493,10 @@ nav.stroke ul li a:hover:after {
 
 }
 
+.promo, .small{
+    padding-right: ;
+}
+
 @media all and (max-width: 994px) {
 
     .textMast {
@@ -504,6 +508,10 @@ nav.stroke ul li a:hover:after {
         padding: 0;
     }
 
+    .promo{
+        padding-right: 0;
+        text-align: center;
+    }
 }
 
 @media (min-width:589px) and (max-width:780px) {
@@ -649,6 +657,15 @@ text-align: left;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+   
+    }
+
+.parallax2 {
+    background: url('/UIpractice/Assets/railroadpark.jpg') repeat fixed 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20%;
    
     }
     .parallax1 {
