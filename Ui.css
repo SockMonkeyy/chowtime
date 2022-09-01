@@ -142,7 +142,9 @@ nav.stroke ul li a:hover:after {
 
 .mastHead {
     height: 100vh;
-    padding-top: 0vh;
+ overflow:hidden;
+    width: 100%;
+   
 }
 
 @media all and (max-width: 996px){
