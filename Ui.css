@@ -47,7 +47,7 @@ body {
     background: #ddd;
     background-size: 300%;
     background-image: var(--gradient);
-    animation: bg-animation 160s infinite;
+    animation: bg-animation 100s infinite;
 }
 
 @keyframes bg-animation {
@@ -731,6 +731,7 @@ nav.stroke ul li a:hover:after {
     border-radius: 10px;
     background-repeat: no-repeat;
     background-blend-mode: lighten;
+    text-align: left;
 
 }
 
