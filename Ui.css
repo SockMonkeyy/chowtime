@@ -170,7 +170,12 @@ nav.stroke ul li a:hover:after {
     height: 100vmin;
     overflow: hidden;
     width: 100%;
+}
 
+@media all and (max-width: 700px) {
+    .mastHead{
+        height: 120vmin;
+    }
 }
 
 .cookie1{
@@ -180,6 +185,10 @@ nav.stroke ul li a:hover:after {
     border-image-width: 10%;
     border-image-repeat: stretch;
     box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.burger{
+
 }
 
 .cookie{
@@ -199,6 +208,10 @@ nav.stroke ul li a:hover:after {
 
     .cookie{
         width: 90%;
+    }
+
+    .burgerMain{
+        display: none;
     }
 }
 
@@ -315,7 +328,8 @@ nav.stroke ul li a:hover:after {
 
 .myBtn:hover {
     color: #e89e30;
-    background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
+    background-color: white;
+    /background: linear-gradient(135deg, rgb(173, 63, 149) 1%, rgba(232, 158, 48) 25%, rgba(26, 188, 156, 1) 50%, #e89e30 100%);
 
 
 }
@@ -544,6 +558,8 @@ nav.stroke ul li a:hover:after {
     }
 
 }
+
+
 
 
 @media all and (max-width: 994px) {
