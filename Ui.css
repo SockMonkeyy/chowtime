@@ -173,6 +173,15 @@ nav.stroke ul li a:hover:after {
 
 }
 
+.cookie1{
+    border: 6px solid orange;
+   
+    border-image-slice: 10%;
+    border-image-width: 10%;
+    border-image-repeat: stretch;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
 .cookie{
     border: 3px solid orange;
    
