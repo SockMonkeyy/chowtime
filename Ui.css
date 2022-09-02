@@ -164,7 +164,7 @@ nav.stroke ul li a:hover:after {
 
 
 .mastHead {
-    height: 100vh;
+    height: 100vmin;
     overflow: hidden;
     width: 100%;
 
@@ -173,6 +173,11 @@ nav.stroke ul li a:hover:after {
 @media all and (max-width: 996px) {
     .mastHead {
         padding-top: 0vh;
+        height: 100vmax;
+    }
+
+    .cookie{
+        width: 90%;
     }
 }
 
