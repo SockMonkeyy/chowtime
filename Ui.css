@@ -170,6 +170,15 @@ nav.stroke ul li a:hover:after {
 
 }
 
+.cookie{
+    border: 10px solid orange;
+   
+    border-image-slice: 10%;
+    border-image-width: 10%;
+    border-image-repeat: stretch;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
 @media all and (max-width: 996px) {
     .mastHead {
         padding-top: 0vh;
